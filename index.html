@@ -60,11 +60,24 @@
     @media screen and (max-width: 800px) {
     .textBox{
     width: 90%;
-  }
-}
+    }
+    h1 {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+    p {
+        font-size: 12px;
+    }
+    }
 </style>
 <body>
-    <img id="banner" src="bannerImage.png">
+    <picture>
+        <source srcset="bannerImageSmall.png" media="(max-width: 400px)">
+        <source srcset="bannerImage.png">
+        <img id="banner" src="bannerImage.png" alt="AiandRuth">
+    </picture>
     <div class="textBox">
         <h1>We invite you to share in our joy and request your presence at the wedding of Ai Ortega and Ruth Vallespin.</h1>
     </div>
