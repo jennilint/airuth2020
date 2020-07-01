@@ -8,11 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <style>
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
     h1 {
-        font-size: 18px;
+        font-size: 16px;
         text-align: center; 
         font-family: 'Lora', serif;
         padding-bottom: 20px;
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     h3 {
         font-size: 14px;
@@ -39,16 +48,9 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding-bottom: 20px;
-    }
-    #title {
-        width: 25%;
-        position: absolute;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 20px; 
-        margin-top: 30px;
+        padding-bottom: 10px;
+        left: 0;
+        top: 0;
     }
     #map {
         width: 100%;
@@ -56,8 +58,12 @@
         margin-left: auto;
         margin-right: auto;
         padding: 10px;
+        padding-bottom: 20px;
     }
-    @media screen and (max-width: 800px) {
+    #footer {
+        height: 20px;
+    }
+    @media screen and (max-width: 600px) {
     .textBox{
     width: 90%;
     }
@@ -73,18 +79,22 @@
     }
 </style>
 <body>
+
     <picture>
-        <source srcset="bannerImageSmall.png" media="(max-width: 400px)">
-        <source srcset="bannerImage.png">
-        <img id="banner" src="bannerImage.png" alt="AiandRuth">
+        <source srcset="bannerImageSmall2.png" media="(max-width: 500px)">
+        <source srcset="bannerImage2.png">
+        <img id="banner" src="bannerImage2.png" alt="AiandRuth">
     </picture>
+
+        
+    <div id="content">
     <div class="textBox">
         <h1>We invite you to share in our joy and request your presence at the wedding of Ai Ortega and Ruth Vallespin.</h1>
     </div>
     <div class="textBox">
         <h3>Time and Date</h3>
         <p>TBA</p>
-        <p>24th of September 2020</p>
+        <p>Thursday 24th of September 2020</p>
         <h3>Location</h3>
         <p>Domus Bothnica <br> Yliopistonranta 5, 65200 Vaasa</p>
         <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d902.4772334847817!2d21.5931780876693!3d63.10286345632463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467d605861115a6b%3A0xdf481a8d696d42b9!2sYliopistonranta%205%2C%2065200%20Vaasa!5e0!3m2!1sfi!2sfi!4v1593336251396!5m2!1sfi!2sfi" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -92,5 +102,8 @@
     <div class="textBox">
         <h1>Please inform us of any food allergies or restrictions.</h1>
     </div>
+    <div id="footer">
+    </div>
+</div>
 </body>
 </html>
