@@ -11,10 +11,14 @@
     html, body {
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0,
+    }
+    body {
+        background-image: url("background2.jpg");
+        background-repeat: no-repeat;
     }
     h1 {
-        font-size: 16px;
+        font-size: 20px;
         text-align: center; 
         font-family: 'Lora', serif;
         padding-bottom: 20px;
@@ -24,18 +28,18 @@
         margin-right: auto;
     }
     h2 {
-        font-size: 12px;
+        font-size: 11px;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         letter-spacing: 2px;
     }
     h3 {
-        font-size: 14px;
+        font-size: 18px;
         text-align: center; 
         font-family: 'Lora', serif;
         padding-top: 10px;
-        color: gray;
+        text-shadow: 0 0 3px white;
     }
     p {
         font-size: 16px;
@@ -43,102 +47,107 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         letter-spacing: 2px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+        text-shadow: 0 0 3px white;
     }
     .textBox {
         width: 45%;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 20px;
     }
-    #banner {
-        width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 10px;
-        left: 0;
-        top: 0;
-    }
-    #map {
-        width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
-        padding-bottom: 20px;
-    }
-    #contact {
+    .colorBox {
+        width: 80%;
         display: flex;
+        margin-left: auto;
+        margin-right: auto;
         justify-content: center;
     }
-    #contactBox {
+    .color1, .color2, .color3, .color4 {
+        border-radius: 30px;
         display: block;
-        padding: 20px;
+        height: 50px;
+        width: 50px;
+        margin: 20px;
+    }
+    .color1 {
+        background-color: rgb(151, 93, 58);
+    }
+    .color2 {
+        background-color: rgb(168, 145, 78);
+    }
+    .color3 {
+        background-color: rgb(76, 87, 71);
+    }
+    .color4 {
+        background-color: rgb(125, 58, 49);
+    }
+    #banner {
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+    }
+    #secondBanner {
+        width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 10px;
     }
     #footer {
-        height: 20px;
+        height: 80px;
     }
     @media screen and (max-width: 600px) {
     .textBox{
     width: 90%;
     }
     h1 {
-        font-size: 12px;
+        font-size: 13px;
     }
     h3 {
-        font-size: 10px;
+        font-size: 14px;
     }
     p {
-        font-size: 12px;
+        font-size: 13px;
     }
-    #contact {
-        flex-direction: column;
+    #banner {
+        width: 60%;
     }
-    #contactBox {
-        padding: 5px;
+    #secondBanner {
+        width: 70%;
     }
     }
 </style>
 <body>
-
-    <picture>
-        <source srcset="bannerImageSmall2.png" media="(max-width: 500px)">
-        <source srcset="bannerImage2.png">
-        <img id="banner" src="bannerImage2.png" alt="AiandRuth">
-    </picture>
-
-        
+    <img id="banner" src="firstBanner2.png" alt="AiandRuth">
+    <img id="secondBanner" src="secondBanner.png" alt="AiandRuth">   
     <div id="content">
     <div class="textBox">
-        <h1>We invite you to share in our joy and request your presence at the wedding of Ai and Ruth Cher.</h1>
-    </div>
-    <div class="textBox">
         <h3>Time and Date</h3>
-        <p>TBA</p>
-        <p>Thursday 24th of September 2020</p>
+        <p>at 17:15 on Thursday <br> 24th of September 2020</p>
         <h3>Location</h3>
-        <p>Domus Bothnica <br> Yliopistonranta 5, 65200 Vaasa</p>
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d902.4772334847817!2d21.5931780876693!3d63.10286345632463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467d605861115a6b%3A0xdf481a8d696d42b9!2sYliopistonranta%205%2C%2065200%20Vaasa!5e0!3m2!1sfi!2sfi!4v1593336251396!5m2!1sfi!2sfi" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <p>Domus Bothnica <br> Yliopistonranta 5, 65200 Vaasa </p>
     </div>
     <div class="textBox">
+        <h3>Wedding Colors</h3>
+        <div class="colorBox">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+            <div class="color4"></div>
+        </div>
         <h3>Guests</h3>
         <p>To allow all guests to relax and enjoy themselves, we have chosen to make our special day adults only. We thank you for your understanding.</p>
         <h3>Wedding Gift</h3>
         <p>We would prefer your presence not your presents, but if you would like to give us a gift, then money would help us getting started on our marriage.</p>
-        <h3>Restrictions</h3>
+        <h3>Allergies and Restrictions</h3>
         <p>Please inform us of any food allergies or restrictions in time.</p>
-    </div>
-    <div id="contact">
-        <div id="contactBox">
-            <h3>Ai</h3>
-            <h2>+358 407773402</h2>
-            <h2> </h2>
-        </div>
-        <div id="contactBox">
-            <h3>Ruth Cher</h3>
-            <h2>+358 405850905</h2>
-            <h2>ruthcher@gmail.com</h2>
-        </div>
+    <h3>Contact</h3>
+            <p>+358 405850905 <br>ruthcher@gmail.com</p>
     </div>
     <div id="footer">
     </div>
